@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: crimson;
+}
+.box {
+  margin: 2rem 2rem 2rem 2rem; /* 1st rem - top, 2nd rem - right, 3rd rem - bottom, 4th rem - left*/
+  padding: 2rem 2rem 2rem 2rem; /* 1st rem - top, 2nd rem - right, 3rd rem - bottom, 4th rem - left*/
+  border: 2px solid;
+  height: 10rem;
+  width: 10rem;
+}
+
+.first_box {
+  background-color: aqua;
+  text-align: center;
+}
+
+.second_box {
+  background-color: blanchedalmond;
+  text-align: end;
+}
+
+.third_box {
+  background-color: cadetblue;
+  text-align: start;
+}
+
+.images {
+  width: 20rem;
+  height: 20rem;
+}
