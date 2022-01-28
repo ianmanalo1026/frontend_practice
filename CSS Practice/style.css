@@ -31,4 +31,81 @@ body {
 .images {
   width: 20rem;
   height: 20rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+/*Display Property
+   Block - occupies parent's element width. Stacked vertically by default
+   Inline - occupies only the necessary space for its content. Does not start on a new line and only takes up as much width as necessary
+   Inline Block - occupies content space, looks like inline from outside, behaves like block-level on the inside. 
+*/
+.parent_div {
+  /* default display is block*/
+  color: white;
+  border: 2px solid;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+.parent_div em {
+  border: 2px solid;
+}
+
+.parent_div strong {
+  /*when inline block was used, all inline element will become block element.*/
+  display: inline-block;
+}
+
+/*Position Property
+Static - positioned elements are not affected by the top, bottom, left, and right properties. it is always positioned according to the normal flow of the page
+Relative -  is positioned relative to its normal position.Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.  
+Fixed - is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+Absolute
+Sticky
+*/
+
+.positioning_practice {
+  color: white;
+  border: 3px solid;
+  margin: 2rem 2rem 2rem 2rem;
+  height: 100rem;
+}
+
+/*Default Property for position is static.*/
+.static_property {
+  left: 20px;
+}
+
+.relative_property {
+  position: relative;
+  left: 2rem;
+  border: 2px solid;
+}
+
+.fixed_property {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73ad21;
+}
+
+.container {
+  position: relative;
+  width: 70rem;
+  height: 30rem;
+  border: 2px solid;
+}
+
+.absolute_property {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+}
+
+.sticky_property {
+  position: sticky;
+  top: 0;
+  background-color: green;
 }
