@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: aliceblue;
 }
 body {
   background-color: crimson;
@@ -108,4 +109,32 @@ Sticky
   position: sticky;
   top: 0;
   background-color: green;
+}
+
+/*Layout Practice*/
+
+/*Float*/
+
+.float_practice {
+  float: left;
+  padding: 25px;
+  color: aliceblue;
+}
+
+.float_sample1 {
+  background-color: #73ad21;
+}
+
+.float_sample2 {
+  background-color: aqua;
+}
+
+.float_sample3 {
+  background-color: blue;
+}
+
+.img_float {
+  float: left;
+  width: 30%;
+  height: 30%;
 }
