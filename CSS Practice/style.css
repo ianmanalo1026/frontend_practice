@@ -138,3 +138,34 @@ Sticky
   width: 30%;
   height: 30%;
 }
+
+/*Flex*/
+
+.flex_container {
+  display: flex;
+  justify-content: end;
+  flex-flow: wrap;
+  text-align: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.f {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(44, 73, 99);
+  margin: 2px;
+}
+
+.flex_centering {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+}
+
+.flex_sample {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+}
