@@ -169,3 +169,31 @@ Sticky
   height: 5rem;
   background-color: black;
 }
+
+.flex_grow {
+  display: flex;
+  height: 30rem;
+  border: 3px solid;
+  justify-content: center;
+  align-items: center;
+}
+
+.fl {
+  width: 5rem;
+  height: 5rem;
+  background-color: black;
+  margin: 2px;
+}
+
+.flex1 {
+  flex-grow: 1;
+}
+
+.flex3 {
+  flex-basis: 900px;
+}
+
+.flex5 {
+  /*shorthand first - flex-grow property, second - flex shrink, third - flex-basis*/
+  flex: 0 0 500px;
+}
