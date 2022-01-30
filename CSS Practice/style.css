@@ -202,8 +202,9 @@ Sticky
 
 .grid_container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 1.8rem 1.8rem; /* short hand 1st - column, 2nd - row*/
+  grid-template-columns: repeat(4, 1fr);
+  align-content: space-between;
 }
 
 .grid_item {
@@ -214,14 +215,19 @@ Sticky
 
 .grid1 {
   /*first - start column and 2nd number - end column  */
-  grid-column: 1/5;
+  grid-column: 1/4;
 }
 
 .grid3 {
-  grid-column: 2/5;
+  grid-column: 2/4;
 }
 
 .grid12 {
   /*Span indicate how many column will be expanded*/
   grid-column: 3 / span 2;
+}
+
+.grid6 {
+  /* short hand - 1st start line of row, 2nd - start line of column, 3rd - end line of row, 4th - end line of column*/
+  grid-area: 3 / 2 / 6 / 4;
 }
