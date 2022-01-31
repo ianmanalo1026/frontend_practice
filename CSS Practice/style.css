@@ -237,6 +237,11 @@ Sticky
 }
 
 /*Pseudo Practice*/
+
+.inline {
+  display: inline-block;
+}
+
 .pseudo_button {
   margin-top: 5rem;
   border: 3px solid;
@@ -278,4 +283,43 @@ Sticky
 
 .pseudo_parent p:hover::first-line {
   background-color: black;
+}
+
+/*
+z-index - property specifies the stack order of an element
+
+Parent box should be on position relative
+child box should be on position absolute
+*/
+.z-index_practice {
+  position: relative;
+  margin: 2rem;
+}
+
+.black_box {
+  position: relative;
+  z-index: 1;
+  width: 70rem;
+  height: 10rem;
+  border: 4px solid;
+}
+
+.grey_box {
+  position: absolute;
+  z-index: 3;
+  width: 40rem;
+  height: 5rem;
+  left: 50px;
+  top: 50px;
+  opacity: 0.8;
+  background-color: grey;
+}
+
+.green_box {
+  position: absolute;
+  background-color: green;
+  width: 20rem;
+  height: 6rem;
+  left: 270px;
+  top: 40px;
 }
