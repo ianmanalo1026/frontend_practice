@@ -113,6 +113,10 @@ Sticky
 
 /*Layout Practice*/
 
+.layout-practice {
+  margin: 3rem;
+}
+
 /*Float*/
 
 .float_practice {
@@ -230,4 +234,48 @@ Sticky
 .grid6 {
   /* short hand - 1st start line of row, 2nd - start line of column, 3rd - end line of row, 4th - end line of column*/
   grid-area: 3 / 2 / 6 / 4;
+}
+
+/*Pseudo Practice*/
+.pseudo_button {
+  margin-top: 5rem;
+  border: 3px solid;
+  background-color: #73ad21;
+}
+
+.pseudo_button:link {
+  size: 50px;
+}
+
+.pseudo_button:active {
+  color: red;
+}
+
+.pseudo_button:visited {
+  color: red;
+}
+.pseudo_button:hover {
+  background-color: aquamarine;
+}
+
+.pseudo_button:nth-child(2):hover {
+  background-color: red;
+}
+
+.pseudo_button:last-child:hover {
+  background-color: blue;
+  height: 3rem;
+}
+
+.pseudo_parent p::first-letter {
+  color: blue;
+  font-size: 30px;
+}
+/*Pseudo class and element can be combined. Sequence should be class fist and then element*/
+.pseudo_parent p:hover::before {
+  content: "this is ";
+}
+
+.pseudo_parent p:hover::first-line {
+  background-color: black;
 }
