@@ -323,3 +323,32 @@ child box should be on position absolute
   left: 270px;
   top: 40px;
 }
+
+/*Background Pic*/
+
+.background_pic {
+  height: 50rem;
+  background: url(images/background.jpg) no-repeat;
+  background-size: 80rem 50rem;
+  opacity: 0.8;
+}
+
+/*Form*/
+.form {
+  height: 100vh;
+  margin: 2rem 2rem;
+}
+input {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 10px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  background-color: aqua;
+  border: 5px solid;
+}
