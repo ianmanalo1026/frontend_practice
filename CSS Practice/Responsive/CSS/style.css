@@ -1,7 +1,9 @@
 /*Navigation bar*/
 
 .navigation {
-  padding: 1.2rem;
+  height: 3.5rem;
+  background-color: aqua;
+  padding: 1rem;
 }
 
 .nav_bar {
@@ -9,8 +11,19 @@
   justify-content: space-between;
 }
 
-.nav_section_container {
+.nav_menu {
   display: flex;
-  justify-content: space-between;
   gap: 1.5rem;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline;
+    font-size: 30px;
+  }
 }
