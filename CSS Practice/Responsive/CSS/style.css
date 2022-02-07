@@ -30,6 +30,23 @@ h1 {
 
 .nav_menu {
   display: none;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  margin: 0 -16px;
+}
+
+.nav_menu a {
+  color: #fff;
+  margin: 0 16px;
+  font-weight: 600;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 99px;
+}
+
+.nav_menu a.is-active,
+.nav_menu a:hover {
+  background-color: red;
 }
 
 .hamburger {
@@ -85,6 +102,6 @@ h1 {
     display: none;
   }
   .nav_menu {
-    display: block;
+    display: flex;
   }
 }
