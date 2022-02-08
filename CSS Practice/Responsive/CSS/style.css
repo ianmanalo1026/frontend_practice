@@ -1,8 +1,13 @@
+:root {
+  --primary-color: red;
+  --container-center: 0 auto;
+}
+
 /*Navigation bar*/
 
 .container {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: var(--container-center);
 
   display: flex;
   align-items: center;
@@ -15,7 +20,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 99;
-  background-color: black;
+  background-color: var(--primary-color);
   padding: 16px 32px;
   border-bottom: 3px solid;
 }
