@@ -2,7 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*everything on the html will be inherited to the page*/
+/*1 rem = 16px*/
+html {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*Fixed the width without scroll bar*/
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 li {
