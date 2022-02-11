@@ -102,15 +102,6 @@ h1 {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-  .nav_menu {
-    display: flex;
-  }
-}
-
 .first-sec {
   height: 100vh;
   display: grid;
@@ -149,4 +140,27 @@ h1 {
 .card p {
   color: #fff;
   padding: 20px;
+
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav_menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 70%;
+  }
+} ;
