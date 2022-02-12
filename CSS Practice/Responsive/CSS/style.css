@@ -163,4 +163,16 @@ h1 {
   .card {
     width: 70%;
   }
-} ;
+}
+
+.section-3 {
+  width: 100%;
+  color: white;
+  font-size: 3rem;
+  padding: 3rem;
+  background-image: linear-gradient(
+      rgba(79, 79, 90, 0.5),
+      rgba(39, 39, 38, 0.5)
+    ),
+    url("../Images/background.jpg");
+}
