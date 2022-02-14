@@ -102,6 +102,33 @@ h1 {
   transform: translate(-3px, 3px) rotate(-45deg);
 }
 
+.hamburger_nav_menu {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hamburger-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hamburger_nav_menu a {
+  color: black;
+  font-size: 2rem;
+  display: flex;
+}
+
 .first-sec {
   height: 100vh;
   display: grid;
@@ -256,13 +283,9 @@ h1 {
   bottom: 100px;
   right: 20px;
 
-  padding: 2rem;
-
   color: #fff;
   font-size: 1.5rem;
-  background-color: green;
   opacity: 0.5;
-  border-radius: 99px;
 }
 
 .contact:hover {
@@ -293,4 +316,39 @@ h1 {
 .contact-active {
   visibility: visible;
   opacity: 1;
+}
+
+.contact-btn {
+  background-color: aqua;
+  padding: 1.5rem;
+  opacity: 0.7;
+
+  font-size: 1.3rem;
+  font-weight: 900;
+
+  border-radius: 99px;
+}
+
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
