@@ -336,6 +336,7 @@ h1 {
   width: 70px;
   height: 70px;
   animation: spin 1s linear infinite;
+  position: fixed;
 }
 
 @keyframes spin {
